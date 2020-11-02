@@ -9,8 +9,85 @@ const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
+const team = []
 
+const questions = [
+    {
+        type: "input", 
+        message: "What is your name?",
+        name: "name"  
+    },
+    {
+        type: "list",
+        message: "Please select employee role",
+        name: "role",
+        choices: [
+            "Manager",
+            "Engineer",
+            "Intern"        
+        ],   
+    },
+    {
+        type: "input",
+        message: "Please enter employee ID",
+        name: "id"
+    },
+    {
+        type: "input",
+        message: "Please enter employee email",
+        name: "email"
+    },
+    {
+        type: "input",
+        message: "What is the manager's office number?",
+        name: "officeNumber"
+    },
+    {
+        type: "input",
+        message: "What is the engineer's Github username?",
+        name: "github"
+    },
+    {
+        type: "input",
+        message: "Where did the intern go to school?",
+        name: "school"
+    },
+    {
+        type: "list",
+        message: "Would you like to add another employees?",
+        name: "addEmployee",
+        choices: [
+            "Yes",
+            "No"
+        ],
+    }  
+ 
+];
 
+function init() {
+    inquirer.prompt(questions).then((response) => {
+        if (response.role === "Manager") {
+            const newManager = new Manager(reponse.name, response.id, response.email, response.officeNumber);
+            team.push(newManager);
+        }
+        else if (response.role === "Engineer") {
+            const newEngineer = new Engineer(reponse.name, response.id, response.email, response.github);
+            team.push(newEngineer);
+        }
+        else {
+            const newIntern = new Intern(response.name, response.id, response.email, response.school);
+            team.push(newIntern);
+        }
+        if (response.addEmployee === "Yes") {
+            init();
+        }
+        else {
+            fs.writeFileSync("team.html", render(team));
+        }
+    })  
+};
+
+init();
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
