@@ -1,6 +1,6 @@
-const Manager = require("./lib/Manager");
-const Engineer = require("./lib/Engineer");
-const Intern = require("./lib/Intern");
+const Manager = require("./Develop/lib/Manager");
+const Engineer = require("./Develop/lib/Engineer");
+const Intern = require("./Develop/lib/Intern");
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
@@ -8,9 +8,10 @@ const fs = require("fs");
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
-const render = require("./lib/htmlRenderer");
+const render = require("./Develop/lib/htmlRenderer");
 const team = []
 
+// User questions
 const questions = [
     {
         type: "input", 
@@ -40,17 +41,32 @@ const questions = [
     {
         type: "input",
         message: "What is the manager's office number?",
-        name: "officeNumber"
+        name: "officeNumber",
+        when: (input) => {
+            if (input.role === "Manager") {
+                return true
+            }
+        }
     },
     {
         type: "input",
         message: "What is the engineer's Github username?",
-        name: "github"
+        name: "github",
+        when: (input) => {
+            if (input.role === "Engineer") {
+                return true
+            }
+        }
     },
     {
         type: "input",
         message: "Where did the intern go to school?",
-        name: "school"
+        name: "school",
+        when: (input) => {
+            if (input.role === "Intern") {
+                return true
+            }
+        }
     },
     {
         type: "list",
@@ -64,10 +80,11 @@ const questions = [
  
 ];
 
+
 function init() {
     inquirer.prompt(questions).then((response) => {
         if (response.role === "Manager") {
-            const newManager = new Manager(reponse.name, response.id, response.email, response.officeNumber);
+            const newManager = new Manager(response.name, response.id, response.email, response.officeNumber);
             team.push(newManager);
         }
         else if (response.role === "Engineer") {
@@ -87,7 +104,9 @@ function init() {
     })  
 };
 
+// runs the application
 init();
+
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
