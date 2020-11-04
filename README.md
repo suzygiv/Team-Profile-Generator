@@ -11,7 +11,7 @@ A Node CLI application that prompts the user for information about the team mana
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Screenshots](#Screenshots)
-- [Walkthrough](#Walkthrough)
+- [Walkthrough](#Walkthrough Video)
 - [Licence](#Licence)
 - [Contributors](#Contributors)
 - [Test](#Test)
