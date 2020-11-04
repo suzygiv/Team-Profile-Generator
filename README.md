@@ -33,7 +33,7 @@ Run the following command at the root of your project and answer the prompted qu
 
 ![Team Generator gif](https://github.com/suzygiv/Team-Profile-Generator/blob/main/Assets/Team%20Generator%20Gif.gif)
 
-To view the entire video walkthrough, click here: https://drive.google.com/file/d/1-iYR_vyOpaHbox9mUFD9_pj3eetaFgi7/view
+To view the entire walkthrough video, click here: https://drive.google.com/file/d/1-iYR_vyOpaHbox9mUFD9_pj3eetaFgi7/view
 
 ## Licence
 ![License](https://img.shields.io/badge/License-mit-blue.svg "License Badge")
