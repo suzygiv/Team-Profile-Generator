@@ -31,6 +31,8 @@ Run the following command at the root of your project and answer the prompted qu
 
 ## Walkthrough 
 
+Below is a walkthrough video of how to use this application.
+
 ![Team Generator gif](https://github.com/suzygiv/Team-Profile-Generator/blob/main/Assets/Team%20Generator%20Gif.gif)
 
 To view the entire walkthrough video, click here: https://drive.google.com/file/d/1-iYR_vyOpaHbox9mUFD9_pj3eetaFgi7/view
