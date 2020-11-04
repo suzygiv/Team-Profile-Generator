@@ -29,7 +29,7 @@ Run the following command at the root of your project and answer the prompted qu
 
 ![Sample Team Generator](https://github.com/suzygiv/Team-Profile-Generator/blob/main/Assets/Sample%20Team%20Generator.PNG)
 
-## Walkthrough Video
+## Walkthrough 
 
 ![Team Generator gif](https://github.com/suzygiv/Team-Profile-Generator/blob/main/Assets/Team%20Generator%20Gif.gif)
 
