@@ -11,7 +11,7 @@ A Node CLI application that prompts the user for information about the team mana
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Screenshots](#Screenshots)
-- [Walkthrough](#Walkthrough)
+- [Vide](#Video)
 - [Licence](#Licence)
 - [Contributors](#Contributors)
 - [Test](#Test)
@@ -29,9 +29,9 @@ Run the following command at the root of your project and answer the prompted qu
 
 ![Sample Team Generator](https://github.com/suzygiv/Team-Profile-Generator/blob/main/Assets/Sample%20Team%20Generator.PNG)
 
-## Walkthrough 
+## Video 
 
-Below is a walkthrough video of how to use this application.
+Below is a walkthrough video that demonstrates the entirety of the application's functionality.
 
 ![Team Generator gif](https://github.com/suzygiv/Team-Profile-Generator/blob/main/Assets/Team%20Generator%20Gif.gif)
 
