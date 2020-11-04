@@ -18,33 +18,33 @@ function teamMembers() {
      // User questions
      //Collects user responses and write to the team.html file
     inquirer.prompt([
-    {
-        type: "input",
-        message: "What is your manager's name?",
-        name: "name",
-    },
-    {
-        type: "input",
-        message: "What is your manager's id?",
-        name: "id",
-    },
-    {
-        type: "input",
-        message: "What is your manager's email?",
-        name: "email",
-    },
-    {
-        type: "input",
-        message: "What is your manager's office number?",
-        name: "officeNumber",
-    }
-    ]).then(function (response) {
-        let manager = new Manager(response.name, response.id, response.email, response.officeNumber);
-        team.push(manager)
-        nextEmployee()
-    }).catch(function(err) {
-        console.log(err);
-    });
+        {
+            type: "input",
+            message: "What is your manager's name?",
+            name: "name",
+        },
+        {
+            type: "input",
+            message: "Please enter employee ID",
+            name: "id",
+        },
+        {
+            type: "input",
+            message: "Please enter employee email",
+            name: "email",
+        },
+        {
+            type: "input",
+            message: "What is your manager's office number?",
+            name: "officeNumber",
+        }
+        ]).then(function (response) {
+            let manager = new Manager(response.name, response.id, response.email, response.officeNumber);
+            team.push(manager)
+            nextEmployee()
+        }).catch(function(err) {
+            console.log(err);
+        });
 
 
     async function nextEmployee() {
@@ -61,8 +61,8 @@ function teamMembers() {
                 ]
             }
         ]);
-            if (teamChoice.team === 'Engineer') {
-                inquirer.prompt([
+        if (teamChoice.team === 'Engineer') {
+            inquirer.prompt([
             {
                 type: "input",
                 message: "What is your engineer's name?",
@@ -70,12 +70,12 @@ function teamMembers() {
             },
             {
                 type: "input",
-                message: "What is your engineer's id?",
+                message: "Please enter employee ID",
                 name: "id",
             },
             {
                 type: "input",
-                message: "What is your engineer's email?",
+                message: "Please enter employee email",
                 name: "email",
             },
             {
@@ -100,17 +100,17 @@ function teamMembers() {
             },
             {
                 type: "input",
-                message: "What is your intern's id?",
+                message: "Please enter employee ID",
                 name: "id",
             },
             {
                 type: "input",
-                message: "What is your intern's email?",
+                message: "Please enter employee email",
                 name: "email",
             },
             {
                 type: "input",
-                message: "What is your intern's school?",
+                message: "Please enter the intern's school name",
                 name: "school",
             }
         ]).then(function (response) {
