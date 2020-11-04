@@ -46,7 +46,7 @@ To view the entire walkthrough video, click here: https://drive.google.com/file/
 [Suzanne Givnish](https://github.com/suzygiv) and my tutor, Mazin.
 
 ## Tests
-Tests are available for Employee, Manager, Engineer and Intern
+Tests are available for Employee, Manager, Engineer, and Intern that can be found in the folder labeled 'Tests.'
 
 ## Questions?
 ✉️ Contact me with any questions: [Email](suzannegivnish@gmail.com), [Github](https://github.com/suzygiv)
