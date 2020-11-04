@@ -11,6 +11,7 @@ A Node CLI application that prompts the user for information about the team mana
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Screenshots](#Screenshots)
+- [Walkthrough](#Walkthrough)
 - [Licence](#Licence)
 - [Contributors](#Contributors)
 - [Test](#Test)
@@ -26,7 +27,13 @@ Run the following command at the root of your project and answer the prompted qu
 
 ## Screenshots
 
-![Sample Team Generator]()
+![Sample Team Generator](https://github.com/suzygiv/Team-Profile-Generator/blob/main/Assets/Sample%20Team%20Generator.PNG)
+
+## Walkthrough Video
+
+![Team Generator gif](https://drive.google.com/file/d/1mcFmwBSi8AU4rBZnsGDiTK_ugFW3O1c8/view)
+
+To view the entire video walkthrough, click here: https://drive.google.com/file/d/1-iYR_vyOpaHbox9mUFD9_pj3eetaFgi7/view
 
 ## Licence
 ![License](https://img.shields.io/badge/License-mit-blue.svg "License Badge")
